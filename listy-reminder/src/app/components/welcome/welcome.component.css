@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+  min-width: 75%;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  /* Darker blue */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  /* Espacio entre los botones */
+}
+
+.secondary-button {
+  font-size: 16px;
+  color: #6c757d;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 16px;
+  min-width: 15vw;
+}
+
+.secondary-button:hover {
+  color: #495057;
+  /* Color gris más oscuro al pasar el ratón */
+  background-color: rgba(0, 0, 0, 0.05);
+  /* Fondo gris claro al pasar el ratón */
+}
+
+.secondary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  /* Resaltar el botón al enfocarlo */
+}
+
+
+.footer {
+  flex-shrink: 0;
+  bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
